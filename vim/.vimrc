@@ -1,12 +1,22 @@
 " ========================================
+" Plugins
+" ========================================
+
+call plug#begin()
+
+" List your plugins here
+Plug 'tmsvg/pear-tree'
+
+call plug#end()
+
+" ========================================
 " Options
 " ========================================
 
 set encoding=UTF-8
-set spelllang=en_us,de_de,es_es
+set spelllang=en_us,de_de
 set hlsearch " Enable highlight on search
 set number " Enable line numbers
-set mouse=a " Enable mouse mode
 set breakindent " Enable break indent
 "set undofile " Save undo history
 set ignorecase " Case-insensitive searching unless \C or capital in search
