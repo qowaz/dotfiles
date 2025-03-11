@@ -80,14 +80,8 @@ nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
 " clear highlights
 nnoremap <Esc> :noh<CR>
 
-" save file
-nnoremap <C-s> :w<CR>
-
 " save file without auto-formatting
 nnoremap <leader>sn :noautocmd w<CR>
-
-" quit file
-nnoremap <C-q> :q<CR>
 
 " delete single character without copying into register
 nnoremap x "_x
@@ -157,6 +151,13 @@ noremap <leader>Y "+Y
 " Open file explorer
 noremap <silent> <leader>e :Lex<CR>
 
+" Move lines up/down
+nnoremap <c-j> :m .+1<CR>==
+nnoremap <c-k> :m .-2<CR>==
+inoremap <c-j> <Esc>:m .+1<CR>==gi
+inoremap <c-k> <Esc>:m .-2<CR>==gi
+vnoremap <c-j> :m '>+1<CR>gv=gv
+vnoremap <c-k> :m '<-2<CR>gv=gv
 
 " ========================================
 " Other
