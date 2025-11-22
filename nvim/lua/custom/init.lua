@@ -1,2 +1,0 @@
-require("lazy")
-print("custom")
