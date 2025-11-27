@@ -31,6 +31,7 @@ return {
     config = function()
       require('nvim-tree').setup {
         -- Add your configuration options here
+        vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
       }
     end,
   },

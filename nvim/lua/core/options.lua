@@ -10,7 +10,7 @@ vim.wo.number = true
 vim.opt.relativenumber = true
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+-- vim.o.mouse = 'a'
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -34,7 +34,3 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
-
--- tags for C:
-vim.opt.tags:append("/usr/include/tags")
-vim.opt.tags:append("./tags")
